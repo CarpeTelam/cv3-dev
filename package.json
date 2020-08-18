@@ -5,7 +5,7 @@
   "main": "node bin/setup.js",
   "scripts": {
     "clean": "node bin/clean.js",
-    "dev": "npm run open && watch 'npm run update' store/",
+    "dev": "watch 'npm run update' store/",
     "extract": "node bin/extract.js",
     "open": "node bin/open.js",
     "setup": "node bin/setup.js",
