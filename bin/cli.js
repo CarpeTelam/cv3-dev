@@ -1,27 +1,28 @@
 #!/usr/bin/env node
 
+const clean = require("../lib/clean.js");
+const extract = require("../lib/extract.js");
+const open = require("../lib/open.js");
 const setup = require("../lib/setup.js");
+const update = require("../lib/update.js");
 
 const [, , ...args] = process.argv;
 
 switch (args[0]) {
   case "clean":
-    console.log("run clean");
-    break;
-  case "dev":
-    console.log("run dev");
+    clean();
     break;
   case "extract":
-    console.log("run extract");
+    extract();
     break;
   case "open":
-    console.log("run open");
+    open();
     break;
   case "setup":
     setup();
     break;
   case "update":
-    console.log("run update");
+    update();
     break;
   default:
     console.log(`Hello World ${args}`);
