@@ -1,34 +1,12 @@
 {
-  "name": "cv3-developer-tools",
-  "version": "1.1.0",
-  "description": "A development environment for CV3 templates",
-  "main": "node bin/setup.js",
-  "scripts": {
-    "clean": "node bin/clean.js",
-    "dev": "watch 'npm run update' store/",
-    "extract": "node bin/extract.js",
-    "open": "node bin/open.js",
-    "setup": "node bin/setup.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "update": "node bin/update.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:CarpeTelam/cv3-developer-tools.git"
-  },
-  "keywords": [
-    "CV3",
-    "Templates"
-  ],
   "author": "Jeff \"Huey\" Huelsbeck <huey@carpetelam.com>",
-  "license": "MIT",
+  "bin": {
+    "cv3-dev": "./bin/cli.js"
+  },
   "bugs": {
     "url": "https://github.com/CarpeTelam/cv3-developer-tools/issues"
   },
-  "homepage": "https://github.com/CarpeTelam/cv3-developer-tools#cv3-developer-tools",
-  "engines": {
-    "node": "*"
-  },
+  "description": "A development environment for CV3 templates",
   "devDependencies": {
     "del": "^5.1.0",
     "eslint": "^7.7.0",
@@ -38,5 +16,30 @@
     "prompts": "^2.3.2",
     "react-dev-utils": "^10.2.1",
     "request": "^2.88.2"
-  }
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/CarpeTelam/cv3-developer-tools#cv3-developer-tools",
+  "keywords": [
+    "CV3",
+    "Templates"
+  ],
+  "license": "MIT",
+  "main": "node lib/setup.js",
+  "name": "cv3-developer-tools",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CarpeTelam/cv3-developer-tools.git"
+  },
+  "scripts": {
+    "clean": "node lib/clean.js",
+    "dev": "watch 'npm run update' store/",
+    "extract": "node lib/extract.js",
+    "open": "node lib/open.js",
+    "setup": "node lib/setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "node lib/update.js"
+  },
+  "version": "1.1.0"
 }
