@@ -1,12 +1,16 @@
 {
-  "author": "Jeff \"Huey\" Huelsbeck <huey@carpetelam.com>",
+  "author": {
+    "email": "huey@carpetelam.com",
+    "name": "Jeff \"Huey\" Huelsbeck",
+    "url": "https://www.carpetelam.com"
+  },
   "bin": {
     "cv3-dev": "./bin/cli.js"
   },
   "bugs": {
-    "url": "https://github.com/CarpeTelam/cv3-developer-tools/issues"
+    "url": "https://github.com/CarpeTelam/cv3-dev/issues"
   },
-  "description": "A development environment for CV3 templates",
+  "description": "A command line interface for CV3 templates",
   "dependencies": {
     "del": "^5.1.0",
     "eslint": "^7.7.0",
@@ -20,20 +24,21 @@
   "engines": {
     "node": "*"
   },
-  "homepage": "https://github.com/CarpeTelam/cv3-developer-tools#cv3-developer-tools",
+  "homepage": "https://github.com/CarpeTelam/cv3-dev/#readme",
   "keywords": [
-    "CV3",
-    "Templates"
+    "cli",
+    "commercev3",
+    "cv3"
   ],
   "license": "MIT",
-  "main": "node lib/setup.js",
-  "name": "cv3-developer-tools",
+  "main": "bin/cli.js",
+  "name": "cv3-dev",
   "repository": {
     "type": "git",
-    "url": "git@github.com:CarpeTelam/cv3-developer-tools.git"
+    "url": "git@github.com:CarpeTelam/cv3-dev.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.1.0"
+  "version": "2.0.0"
 }
