@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-const clean = require("../lib/clean.js");
-const extract = require("../lib/extract.js");
-const open = require("../lib/open.js");
-const setup = require("../lib/setup.js");
-const update = require("../lib/update.js");
+import clean from "../lib/clean.js";
+import extract from "../lib/extract.js";
+import setup from "../lib/setup.js";
+import update from "../lib/update.js";
 
 const [, , ...args] = process.argv;
 
@@ -14,9 +13,6 @@ switch (args[0]) {
     break;
   case "extract":
     extract();
-    break;
-  case "open":
-    open();
     break;
   case "setup":
     setup();
