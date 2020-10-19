@@ -13,10 +13,10 @@
   "description": "A command line interface for CV3 templates",
   "dependencies": {
     "del": "^5.1.0",
-    "eslint": "^7.7.0",
+    "eslint": "^7.11.0",
     "extract-zip": "^2.0.1",
     "glob": "^7.1.6",
-    "moment": "^2.27.0",
+    "moment": "^2.29.1",
     "prompts": "^2.3.2",
     "request": "^2.88.2"
   },
@@ -40,5 +40,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "2.1.1"
+  "version": "2.1.2"
 }
